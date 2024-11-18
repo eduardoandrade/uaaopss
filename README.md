@@ -1,8 +1,8 @@
 # Unifying Adversarial Attacks on Person Search Systems
 This repository contains the script files and additional content of the "Unifying Adversarial Attacks on Person Search Systems" thesis.
 
-<img src="images/figure_1.png" alt="PS Framework" style="width:50%;">
-<img src="images/figure_2.png" alt="Unified Attack" style="width:50%;">
+<img src="images/figure_1.png" alt="PS Framework" style="width:100%;">
+<img src="images/figure_2.png" alt="Unified Attack" style="width:100%;">
 
 ## Topics
 
@@ -218,11 +218,11 @@ their organization.
 
 * CUHK-SYSU
 
-<img src="images/figure_3.png" alt="Results" style="width:50%;">
+<img src="images/figure_3.png" alt="Results" style="width:100%;">
 
 * PRW
 
-<img src="images/figure_4.png" alt="Results" style="width:50%;">
+<img src="images/figure_4.png" alt="Results" style="width:100%;">
 
 P.S.: You can check the statistic significance of the results by using the Wilcoxon signed-rank test. The file `wilcoxon_test.py` contains an implementation for this non-parametric statistical test used to compare paired samples or related groups, assessing whether their distributions differ without assuming normality. The only needed Python packages for its execution are `numpy` and `scipy`.
 
