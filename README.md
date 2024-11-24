@@ -175,8 +175,9 @@ and there are separated scripts to equalize the available identities with the pe
 
 Depending on the `attack combination` you want to apply, `you can start with TOG or P-FGSM`. The `tog/demo_universal.ipynb` contains the
 notebook for executing the universal attack approach. Inside this notebook, we have two preloaded detectors: `YOLOv3_MobileNetV1` 
-and `VGG16`. `We have to choose one of them if we want to create distractor images` in the end (one before the last cell of the notebook).
-The attack hyperparameters, such as the dataset and image output folders, are easy to set up. `We recommend running the notebook cell by cell` 
+and `VGG16`. `We have to choose one of them if we want to create distractor images` in the end (one before the last cell of the notebook). 
+Another important file is `tog/adversarial_checkpoint.npz`. This file is the pre-trained perturbation. The attack hyperparameters, 
+such as the dataset and image output folders, are easy to set up. `We recommend running the notebook cell by cell` 
 because we have some examples in the notebook, and just one of the last two cells is enough for what you probably want to do.
 
 ## 4.3. P-FGSM VE
@@ -197,7 +198,7 @@ you can go to the final step of using the Deep Mis-Ranking implementation.
 The `deep_mis_ranking/train.py` is the last file and step to finish the PS pipeline. To run this script, You can `do the command below` in your terminal:
 
 ```
-python train.py --targetmodel='aligned' --dataset='market1501' --D_resume_dir='./logs/aligned/market1501/best_D.pth.tar' --G_resume_dir='./logs/aligned/market1501/best_G.pth.tar' --mode='test' --loss='xent_htri' --ak_type=-1 --temperature=-1 --use_SSIM=2 --epoch=40
+python train.py --targetmodel='aligned' --dataset='market1501' --D_resume_dir='./logs/aligned/cuhk_sysu/best_D.pth.tar' --G_resume_dir='./logs/aligned/cuhk_sysu/best_G.pth.tar' --mode='test' --loss='xent_htri' --ak_type=-1 --temperature=-1 --use_SSIM=2 --epoch=40
 ```
 
 As you can see in the command above, many parameters exist. You can see these available choices inside the `deep_mis_ranking/train.py` 
@@ -224,7 +225,8 @@ their organization.
 
 <img src="images/figure_4.png" alt="Results" style="width:100%;">
 
-P.S.: You can check the statistic significance of the results by using the Wilcoxon signed-rank test. The file `wilcoxon_test.py` contains an implementation for this non-parametric statistical test used to compare paired samples or related groups, assessing whether their distributions differ without assuming normality. The only needed Python packages for its execution are `numpy` and `scipy`.
+P.S.: You can check the statistic significance of the results by using the Wilcoxon signed-rank test. The file `wilcoxon_test.py` contains an implementation for this non-parametric statistical test used to compare paired samples or related groups, assessing whether their distributions differ without assuming normality. The only needed Python packages for its execution are `numpy` and `scipy`. More files like the heatmap example 
+are available in `others`.
 
 ## 6. Paper References
 
