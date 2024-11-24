@@ -210,7 +210,8 @@ file. Other configurations not related to the attack specifically are:
 * Mode (`test` or `train` mode for model execution)
 * Epoch (the number of epochs for training)
 
-More information about this attack implementation is accessible in [Repository References](#7-repository-references) (`Deep Mis-Ranking`). The final results appear with `After` and `Before` strings, indicating the combined attack methods with or without Deep Mis-Ranking, respectively.
+More information about this attack implementation is accessible in [Repository References](#7-repository-references) (`Deep Mis-Ranking`). The final results appear with `After` and `Before` strings, indicating the combined attack methods with or without Deep Mis-Ranking, respectively. Use the 
+`cat` command to reassemble the parts of `best_D.pth.tar`.
 
 ## 5. Results
 
