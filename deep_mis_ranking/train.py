@@ -104,7 +104,7 @@ def main(opt):
     print("CPU mode")
 
   ### Setup dataset loader ###
-  print("Initializing dataset {}".format(args.dataset))
+  print("Initializing dataset")
   dataset = data_manager.init_img_dataset(root=args.root, name=args.dataset, split_id=opt['split_id'], cuhk03_labeled=opt['cuhk03_labeled'], cuhk03_classic_split=opt['cuhk03_classic_split'])
   if args.ak_type < 0:
     trainloader = DataLoader(ImageDataset(dataset.train, transform=opt['transform_train']), sampler=RandomIdentitySampler(dataset.train, num_instances=opt['num_instances']), batch_size=args.train_batch, num_workers=opt['workers'], pin_memory=pin_memory, drop_last=True)

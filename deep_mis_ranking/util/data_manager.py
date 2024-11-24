@@ -45,7 +45,7 @@ class Market1501(object):
         num_total_pids = num_train_pids + num_query_pids
         num_total_imgs = num_train_imgs + num_query_imgs + num_gallery_imgs
 
-        print("=> Market1501 loaded")
+        print("=> Dataset loaded")
         print("Dataset statistics:")
         print("  ------------------------------")
         print("  subset   | # ids | # images")
