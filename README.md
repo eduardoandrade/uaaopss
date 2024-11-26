@@ -226,8 +226,7 @@ their organization.
 
 <img src="images/figure_4.png" alt="Results" style="width:100%;">
 
-P.S.: You can check the statistic significance of the results by using the Wilcoxon signed-rank test. The file `wilcoxon_test.py` contains an implementation for this non-parametric statistical test used to compare paired samples or related groups, assessing whether their distributions differ without assuming normality. The only needed Python packages for its execution are `numpy` and `scipy`. More files like the heatmap example 
-are available in `others`.
+P.S.: More files like the heatmap example are available in `others`.
 
 ## 6. Paper References
 
